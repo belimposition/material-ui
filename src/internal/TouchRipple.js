@@ -98,7 +98,7 @@ class TouchRipple extends Component {
   };
 
   handleTouchStart = (event) => {
-    event.stopPropagation();
+    // event.stopPropagation(); закоментил чтобы можно было скролать скроллбок "держась" за элементы material-ui belimpostiion
     // If the user is swiping (not just tapping), save the position so we can
     // abort ripples if the user appears to be scrolling.
     if (this.props.abortOnScroll && event.touches) {
